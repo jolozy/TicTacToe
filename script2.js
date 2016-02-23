@@ -1,7 +1,9 @@
 // function resetPage () {
 //   document.location.reload();
 // }
+//
 // reset.addEventListener('click', resetPage )
+
 
 var reset = document.getElementById('clearboard')
 reset.addEventListener("click", function() {
@@ -18,9 +20,11 @@ body.addEventListener('click', function(event) {
   if (currentPlayer == "x") {
     grid.textContent = "x"
     currentPlayer = "o"//switch player to O after x turn
+    message.textContent = "It's O's turn!"
   } else {
     grid.textContent = "o"
     currentPlayer = "x"//switch player to O after x turn
+    message.textContent = "It's X's turn!"
   }
   var B1 = document.getElementById("B1").textContent
   console.log(B1)
